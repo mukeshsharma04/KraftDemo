@@ -30,3 +30,14 @@ To put compiled files into `static` directory, type the following command.
 ```bash
 $ npm run build
 ```
+## Make Offline with sw-precache
+To make assets offline, type the following command.
+
+```bash
+$ sw-precache --sw-file='src/sw.js' \ --static-file-globs='src/**/*.html'
+```
+Uncomment this line from index.html
+ ```    if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./src/sw.js');
+        }
+ ```     
