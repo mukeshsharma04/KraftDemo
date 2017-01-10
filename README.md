@@ -1,5 +1,5 @@
-# Kraftly
-A boilerplate for React + Redux + Material UI + ES6 syntax applications. This boilerplate includes following tools and frameworks.
+# KraftDemo
+A boilerplate for KraftDemo.
 
 * [React](https://facebook.github.io/react/)
 * [Redux](http://rackt.org/redux/index.html)
@@ -30,3 +30,14 @@ To put compiled files into `static` directory, type the following command.
 ```bash
 $ npm run build
 ```
+## Make Offline with sw-precache
+To make assets offline, type the following command.
+
+```bash
+$ sw-precache --sw-file='src/sw.js' \ --static-file-globs='src/**/*.html'
+```
+Uncomment this line from index.html
+ ```    if('serviceWorker' in navigator) {
+          navigator.serviceWorker.register('./src/sw.js');
+        }
+ ```     
