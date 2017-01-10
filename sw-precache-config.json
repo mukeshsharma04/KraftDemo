@@ -1,0 +1,16 @@
+{
+  "swFile": "src/sw.js",
+  "staticFileGlobs": [
+    "src/**/*.css",
+    "src/**/*.{ttf,woff,woff2,eof}",
+    "src/**/*.js",
+    "src/**/*.html",
+    "src/**/*.{png,jpg,gif,svg,mp3}"
+  ],
+  "handleFetch": true,
+  "stripPrefix": "src/",
+  "cacheId": "let-me-see-v1",
+  "maximumFileSizeToCacheInBytes": 4194304,
+  "ignoreUrlParametersMatching": "[/./]",
+  "verbose": true
+}
